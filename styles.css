@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav{
+    background-color: #FCAF02;
+    font-size: larger;
+    color: black;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-logo{
+    color: black;
+    font-weight:bolder;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.nav-right{
+    color: black;
+    text-decoration: none;
+    padding-right: 25px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 30px;
+    margin-right: 20px;
+}
+
+.hero{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    align-items: stretch;
+}
+
+.intro{
+    width: 60%;
+    font-size: larger;
+}
+
+#pic{
+    width: 40%;
+    height: auto;
+}
+
+#lorem{
+    margin-top: 30px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 45px;
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+form h1 {
+    grid-column: 1 / -1;
+    color: #FCAF02;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+form input {
+    grid-column: 1 / -1;
+    background: transparent;
+    border: 2px solid #FCAF02;
+    border-radius: 30px;
+    padding: 15px 35px;
+    color: white;
+    font-size: 18px;
+    outline: none;
+}
+
+#mobile, #city {
+    grid-column: span 1;
+}
+
+form input::placeholder {
+    color: #FCAF02;
+}
+
+#submit-btn {
+    grid-column: 1 / -1;
+    justify-self: center;
+    background: #FCAF02;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 14px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#login-btn {
+    background: #FCAF02;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 65px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+table {
+    width: 94%;
+    margin: 70px auto 30px;
+    border-collapse: collapse;
+    color: #FCAF02;
+    font-size: 18px;
+}
+
+th, td {
+    border: 1px solid #FCAF02;
+    padding: 18px 25px;
+    text-align: left;
+}
+
+th:first-child, td:first-child {
+    text-align: center;
+}
+
+tfoot {
+    background-color: #FCAF02;
+    color: black;
+}
+
+tfoot td {
+    border-block-start-color: #FCAF02;
+    border-block-end-color: #FCAF02;
+    border-right-color: black;
+}
